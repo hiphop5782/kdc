@@ -26,6 +26,7 @@ public class OllamaService {
 		URI uri = new URI("http://localhost:11434/api/generate");
 		
 		HttpHeaders header = new HttpHeaders();
+		header.add("Content-Encoding", "UTF-8");
 		
 		Map<String, String> body = new HashMap<>();
 		body.put("model", "llama3");
